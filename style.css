@@ -17,29 +17,11 @@ body {
     line-height: 1.6;
 }
 
-.bold {
-  font-weight: 700;
-  font-family: 'Tomatoes', cursive;
-}
-
-h2 {
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.main-content {
-    margin-left: 150px;
-    padding: 2rem;
-    padding-bottom: 0;
-    background-color: #b1d4e0;
-}
-
-/* Layout Container */
+/* == Navigation Styling == */
 .menu-responsive {
     display: flex;
 }
 
-/* Sidebar Navigation Styles */
 .menu-responsive ul {
     list-style: none;
     margin: 0;
@@ -54,13 +36,11 @@ h2 {
     overflow-y: auto;
 }
 
-/* Navigation List Items */
 .menu-responsive ul li {
     padding: 1rem 0;
     text-align: center;
 }
 
-/* Navigation Links */
 .menu-responsive ul li a.scroll {
     display: block;
     padding: 12px 15px;
@@ -83,6 +63,25 @@ h2 {
     color: white;
 }
 
+/* == Main Content Styling Start from here == */
+.main-content {
+    margin-left: 150px;
+    padding: 2rem;
+    padding-bottom: 0;
+    background-color: #b1d4e0;
+}
+
+.bold {
+  font-weight: 700;
+  font-family: 'Tomatoes', cursive;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* == Header Styling == */
 header {
   background-color: #0c2d48;
   color: #fff;
@@ -96,7 +95,6 @@ header {
   margin-bottom: 30px;
 }
 
-/* Animations */
 @keyframes zoomBounce {
   0% {
     transform: scale(0.5);
@@ -137,13 +135,12 @@ header {
   }
 }
 
-/* Header Top */
 .header__top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.2rem; /* control vertical spacing */
-  padding: 1rem 0 0.5rem 0; /* tighter top & bottom */
+  gap: 0.2rem; 
+  padding: 1rem 0 0.5rem 0; 
   animation: zoomBounce 1s ease-out forwards;
 }
 
@@ -163,21 +160,19 @@ header {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 300;
-  margin: 0; /* ← REMOVE ALL extra vertical space */
-  padding-bottom: 0.2rem; /* optional small gap */
+  margin: 0; 
+  padding-bottom: 0.2rem; 
   animation: popIn 1.2s ease-out forwards;
   transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
-/* Optional glow */
 .header__top-brand h1:hover {
   color: #75e6da;
   text-shadow: 0 0 8px #75e6da, 0 0 16px #75e6da;
 }
 
-/* Social Links */
 .header__links {
-  margin-top: 0.2rem; /* reduced from negative or larger margin */
+  margin-top: 0.2rem; 
 }
 
 
@@ -214,7 +209,6 @@ header {
   transform: scale(1.1);
 }
 
-/* Hero Content */
 .header__content {
   width: 75%;
   margin: 0 auto;
@@ -235,9 +229,10 @@ header {
 
 .header__content a.btn-scroll:hover {
   color: #189ab4;
+  border: 1px solid #189ab4;
+  border-radius: 5px;
 }
 
-/* Scroll Arrow */
 .header__arrow {
   margin-top: 2rem;
   text-align: center;
@@ -250,7 +245,6 @@ header {
   animation: bounce 2s infinite;
 }
 
-/* Responsive Tweaks */
 @media (min-width: 47.9rem) {
   .header__top {
     padding-top: 2rem;
@@ -282,11 +276,11 @@ header {
   }
 
   .header__links {
-    margin-top: -15px; /* Slightly higher on larger screens */
+    margin-top: -15px; 
   }
 }
 
-/* About Section */
+/* == About Section == */
 #about {
     background: #f8f9fa;
     padding: 60px 20px;
@@ -315,7 +309,6 @@ header {
     color: #000c66;
 }
 
-/* Text Content Styling */
 #about p {
     font-size: 1.1rem;
     color: #555;
@@ -333,7 +326,6 @@ header {
     color: #000c66;
 }
 
-/* Personal Info Section */
 #about .row {
     display: flex;
     flex-wrap: wrap;
@@ -373,11 +365,6 @@ header {
     text-decoration: underline;
 }
 
-/* #about ul li i {
-    color: #00ff6c;
-    margin-right: 8px;
-} */
-
 /* Interests Section */
 #about .interest-container h3 {
     margin-top: 40px;
@@ -386,7 +373,6 @@ header {
     text-align: center;
 }
 
-/* Interests Grid Layout - 2x4 */
 #about .interest-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -398,7 +384,6 @@ header {
     margin: 0 auto;
 }
 
-/* Interest Box */
 #about .icon-box {
     background: #fff;
     padding: 15px;
@@ -423,7 +408,6 @@ header {
     color: #333;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .interest-grid {
         grid-template-columns: 1fr;
@@ -446,7 +430,6 @@ header {
     }
 }
 
-/* Medium Screens (768px and above) */
 @media (min-width: 768px) {
     #about {
         width: 85%;
@@ -465,7 +448,6 @@ header {
     }
 }
 
-/* Large Screens (992px and above) */
 @media (min-width: 992px) {
     #about {
         width: 75%;
@@ -484,7 +466,6 @@ header {
     }
 }
 
-/* Extra-Large Screens (1200px and above) */
 @media (min-width: 1200px) {
     #about {
         width: 100%;
@@ -504,7 +485,7 @@ header {
     }
 }
 
-/* Education Section Styling */
+/* == Education Section Styling == */
 #education {
     background-color: #f8f9fa;
     padding: 40px 0;
@@ -572,7 +553,6 @@ header {
     }
 }
 
-/* Certification Section */
 .certification {
     text-align: center;
     margin-bottom: 20px;
@@ -584,7 +564,6 @@ header {
     color: #333;
 }
 
-/* Certification Grid Layout */
 .certification-grid {
     display: flex;
     flex-wrap: wrap;
@@ -594,7 +573,6 @@ header {
     position: relative;
 }
 
-/* Certification Card */
 .certification-card {
     max-width: 250px;
     background: #fff;
@@ -623,7 +601,6 @@ header {
     display: block;
 }
 
-/* Initially Hide Certificate Info */
 .certificate-info {
     opacity: 0;
     visibility: hidden;
@@ -642,13 +619,11 @@ header {
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* Show Info on Hover */
 .certification-card:hover .certificate-info {
     opacity: 0.6;
     visibility: visible;
 }
 
-/* Certificate Link */
 .certificate-link {
     margin-top: 10px;
 }
@@ -664,7 +639,7 @@ header {
     color: #000c66;
 }
 
-/* Skills Section Styling */
+/* == Skills Section Styling == */
 #skills {
     background-color: #0c2d48;
     color: #fff;
@@ -678,7 +653,6 @@ header {
     margin: 0 auto;
 }
 
-/* Headings */
 #skills h1 {
     font-size: 2rem;
     font-weight: 700;
@@ -694,7 +668,6 @@ header {
     text-align: center;
 }
 
-/* Row and Column Styling */
 #skills .row {
     display: flex;
     justify-content: center;
@@ -706,7 +679,6 @@ header {
     max-width: 100%;
 }
 
-/* Skills List */
 #skills ul {
     list-style: none;
     padding: 0;
@@ -732,7 +704,6 @@ header {
     background: #c1c3c6;
 }
 
-/* Skill Icons */
 #skills .skill-icon {
     width: 30px;
     height: 30px;
@@ -740,7 +711,6 @@ header {
     border-radius: 4px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     #skills .row {
         flex-direction: column;
@@ -810,7 +780,6 @@ header {
     transform: scale(1.05);
 }
 
-/* Icons on image */
 .card-image {
     position: relative;
     height: 220px;
@@ -833,7 +802,6 @@ header {
     transition: 0.3s;
 }
 
-/* Slight horizontal separation */
 .card-image i.fa-github {
     transform: translate(-50%, -50%) translateX(30px);
 }
@@ -847,12 +815,10 @@ header {
     color: #000;
 }
 
-/* GitHub link (hidden) */
 .card-git-content {
     display: none;
 }
 
-/* Inner content styles */
 .card-content h4 {
     font-size: 1.3rem;
     font-weight: bold;
@@ -881,15 +847,13 @@ header {
   padding: 20px 25px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .card-medium {
         margin-bottom: 30px;
     }
 }
 
-
-/* Contact Section Styles */
+/* == Contact Section Styles == */
 #contact {
     background-color: #0c2d48;
     padding: 40px 0;
@@ -1010,7 +974,6 @@ footer {
   padding: 0 20px;
 }
 
-/* Styling for heart animation */
 footer i.fa-heart {
   color: red;
   margin: 0 5px;
@@ -1021,7 +984,6 @@ footer i {
   margin: 0 3px;
 }
 
-/* Heart beat animation */
 @keyframes pulse {
   0% {
     transform: scale(1);
