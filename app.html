@@ -14,8 +14,6 @@
 </head>
 
 <body>
-
-    <!-- Responsive Navigation -->
     <div class="menu-responsive" id="myMenu-responsive">
         <nav>
             <ul>
@@ -24,8 +22,8 @@
                 <li><a class="scroll" href="#skills"><i class="fa-solid fa-list-check"></i> Skills</a></li>
                 <li><a class="scroll" href="#project"><i class="fa-solid fa-laptop-file"></i> Projects</a></li>
                 <li><a class="scroll" href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
-                <li><a class="scroll" href="Data/Resume.pdf" target="_blank"><i class="fa-solid fa-file"></i>
-                        Resume</a></li>
+                <li><a href="https://drive.google.com/file/d/15f_1Y1kfJgVWWpY37FY7_48iRjAsgPxJ/view?usp=sharing"
+                        target="_blank" class="custom-link"> <i class="fa-solid fa-file"></i> Resume</a></li>
             </ul>
         </nav>
     </div>
@@ -41,15 +39,21 @@
                     <div class="header__links">
                         <ul>
                             <li>
-                                <a href="https://www.linkedin.com/in/gaurimhatre0304" target="_blank"
+                                <a class="one" href="https://www.linkedin.com/in/gaurimhatre0304" target="_blank"
                                     rel="noopener noreferrer" title="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/gauri0304" target="_blank" rel="noopener noreferrer"
+                                <a class="two" href="https://github.com/gauri0304" target="_blank" rel="noopener noreferrer"
                                     title="GitHub">
                                     <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="three" href="https://gaurimhatre2001@gmail.com" target="_blank" rel="noopener noreferrer"
+                                    title="Gmail">
+                                    <i class="fa-solid fa-envelope"></i>
                                 </a>
                             </li>
                         </ul>
@@ -244,7 +248,8 @@
                         <h2>Languages and Databases</h2>
                         <ul>
                             <li><img src="/software_icons/html.png" alt="HTML/CSS" class="skill-icon"> HTML/CSS</li>
-                            <li><img src="/software_icons/javascript.png" alt="JavaScript" class="skill-icon"> JavaScript</li>
+                            <li><img src="/software_icons/javascript.png" alt="JavaScript" class="skill-icon">
+                                JavaScript</li>
                             <li><img src=" /software_icons/python.png" alt="Python" class="skill-icon"> Python</li>
                             <li><img src="/software_icons/sql.png" alt="SQL/MySQL" class="skill-icon"> SQL/MySQL</li>
                         </ul>
@@ -257,8 +262,10 @@
                         <ul>
                             <li><img src="/software_icons/numpy.png" alt="NumPy" class="skill-icon"> NumPy</li>
                             <li><img src="/software_icons/pandas.png" alt="Pandas" class="skill-icon"> Pandas</li>
-                            <li><img src="/software_icons/matplotlib.png" alt="matplotlib" class="skill-icon"> matplotlib</li>
-                            <li><img src="/software_icons/scikit-learn.png" alt="scikit-learn" class="skill-icon"> scikit-learn
+                            <li><img src="/software_icons/matplotlib.png" alt="matplotlib" class="skill-icon">
+                                matplotlib</li>
+                            <li><img src="/software_icons/scikit-learn.png" alt="scikit-learn" class="skill-icon">
+                                scikit-learn
                             </li>
                             <li><img src="/software_icons/pytorch.png" alt="PyTorch" class="skill-icon"> PyTorch</li>
                             <li><img src="/software_icons/nltk.png" alt="NLTK" class="skill-icon"> NLTK</li>
@@ -275,8 +282,10 @@
                             <li><img src="/software_icons/django.png" alt="Django" class="skill-icon"> Django</li>
                             <li><img src="/software_icons/flask.png" alt="Flask" class="skill-icon"> Flask</li>
                             <li><img src="/software_icons/tkinter.png" alt="Tkinter" class="skill-icon"> Tkinter</li>
-                            <li><img src="/software_icons/bootstrap.png" alt="Bootstrap" class="skill-icon"> Bootstrap</li>
-                            <li><img src="/software_icons/streamlit.png" alt="Streamlit" class="skill-icon"> Streamlit</li>
+                            <li><img src="/software_icons/bootstrap.png" alt="Bootstrap" class="skill-icon"> Bootstrap
+                            </li>
+                            <li><img src="/software_icons/streamlit.png" alt="Streamlit" class="skill-icon"> Streamlit
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -286,7 +295,8 @@
                         <h2>Other Tools</h2>
                         <ul>
                             <li><img src="/software_icons/git.png" alt="Git" class="skill-icon"> Git</li>
-                            <li><img src="/software_icons/google-cloud.png" alt="Google Cloud" class="skill-icon"> Google Cloud
+                            <li><img src="/software_icons/google-cloud.png" alt="Google Cloud" class="skill-icon">
+                                Google Cloud
                             </li>
                             <li><img src="/software_icons/jupyter.png" alt="Jupyter" class="skill-icon"> Jupyter</li>
                             <li><img src="/software_icons/heroku.png" alt="Heroku" class="skill-icon"> Heroku</li>
@@ -298,109 +308,73 @@
 
         <!-- Project Section -->
         <section id="project">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <h3>College Management System</h3>
-                        <div class="card-medium">
-                            <div class="card-image">
-                                <i class="fa-solid fa-circle-info"></i>
-                                <i class="fa-brands fa-github"></i>
-                                <img src="Data/CMS.png" alt="College Management System" style="height: 100%; width: 100%;"
-                                    class="activator">
-                            </div>
-                            <div class="card-git-content">
-                                <a href="https://github.com/gauri0304/College-Management-System"></a>
-                            </div>
-                            <div class="card-content">
-                                <h4>College Management System</h4>
-                                <p><strong>Tools: </strong>Python, Django, MySQL</p>
-                                <p>Designed an efficient system to manage student records, faculty details, course
-                                    enrollments, and attendance tracking.</p>
-                                <p>Implemented features such as fee management, timetable scheduling, and exam result
-                                    processing to streamline administrative tasks.</p>
-                                <p>Developed an intuitive interface with role-based access control to ensure data
-                                    security and ease of use for students, teachers, and administrators.</p>
-                            </div>
-                        </div>
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="project-image toggle-content" style="background-image: url('Data/CMS.png');">
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <h3>AI-enhanced Whiteboard</h3>
-                        <div class="card-medium">
-                            <div class="card-image">
-                                <i class="fa-solid fa-circle-info"></i>
-                                <i class="fa-brands fa-github"></i>
-                                <img src="Data/AI-W.png" alt="AI-enhanced Whiteboard" style="height: 100%; width: 100%;"
-                                    class="activator">
-                            </div>
-                            <div class="card-git-content">
-                                <a href="https://github.com/gauri0304/AI-enhanced-WhiteBoard"></a>
-                            </div>
-                            <div class="card-content">
-                                <h4>AI-enhanced Whiteboard</h4>
-                                <p><strong>Tools: </strong>Python, NLTK, MySQL, OpenCV, PyTorch, Scikit-learn,
-                                    TensorFlow</p>
-                                <p>Developed an advanced whiteboard application in Python with Tkinter and SQL for data
-                                    storage.</p>
-                                <p>Integrated AI tools for idea generation, text extraction from images,
-                                    document-to-flowchart conversion, and information summarization, along with a voice
-                                    assistant for interaction.</p>
-                                <p>Designed to enhance productivity and creativity, the application offers an intuitive
-                                    user interface for educational and professional use.</p>
-                            </div>
-                        </div>
+                    <div class="project-content hidden">
+                        <a href="https://github.com/gauri0304/College-Management-System" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <h4>College Management System</h4>
+                        <p><strong>Tools:</strong> Python, Django, MySQL</p>
+                        <p>Designed an efficient system to manage student records, faculty details, course enrollments,
+                            and attendance tracking.</p>
+                        <p>Features include fee management, timetable scheduling, and exam result processing to
+                            streamline administrative tasks.</p>
+                        <p>Built with role-based access control to ensure secure, intuitive access for students,
+                            teachers, and admins.</p>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <h3>Recipe Recommendation System</h3>
-                        <div class="card-medium">
-                            <div class="card-image">
-                                <i class="fa-solid fa-circle-info"></i>
-                                <i class="fa-brands fa-github"></i>
-                                <img src="Data/RRS.png" alt="Recipe Recommendation System" style="height: 100%; width: 100%;"
-                                    class="activator">
-                            </div>
-                            <div class="card-git-content">
-                                <a href="https://github.com/gauri0304/recipe-recommendation-system"></a>
-                            </div>
-                            <div class="card-content">
-                                <h4>Recipe Recommendation System</h4>
-                                <p><strong>Tools: </strong>Python, Flask, MySQL, Pandas</p>
-                                <p>The Recipe Recommendation System suggests personalized recipes based on user
-                                    preferences, dietary restrictions, and available ingredients.</p>
-                                <p>It aims to enhance the culinary experience by providing tailored recommendations that
-                                    meet individual tastes and nutritional needs.</p>
-                                <p>The system aims to enhance user experience in meal planning by providing quick,
-                                    healthy, and diverse recipe suggestions.</p>
-                            </div>
-                        </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image toggle-content" style="background-image: url('Data/AI-W.png');">
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <h3>Spine & Dine Restaurant Website</h3>
-                        <div class="card-medium">
-                            <div class="card-image">
-                                <i class="fa-solid fa-circle-info"></i>
-                                <i class="fa-brands fa-github"></i>
-                                <img src="Data/restaurant1.jpg" alt="Spine & Dine Restaurant"
-                                    style="height: 100%; width: 100%;" class="activator">
-                            </div>
-                            <div class="card-git-content">
-                                <a href="https://github.com/gauri0304/spine--dine-restaurant"></a>
-                            </div>
-                            <div class="card-content">
-                                <h4>Spine & Dine Restaurant</h4>
-                                <p><strong>Tools: </strong>HTML, CSS, JavaScript, BootStrap</p>
-                                <p>The website is divided into well-structured sections including Home, About, Menu,
-                                    Specials, Events, Chefs, Gallery, and Contact—each with unique styles and content
-                                    for enhanced user navigation and experience.</p>
-                                <p>A dedicated reservation modal allows users to book tables directly from the homepage,
-                                    with stylish form inputs and a user-friendly layout supported by Bootstrap and
-                                    custom CSS.</p>
-                                <p>The site uses animations (via AOS), responsive images, hover effects, and card-based
-                                    layouts for a visually engaging and modern presentation, especially in sections like
-                                    Specials and Events.</p>
-                            </div>
-                        </div>
+                    <div class="project-content hidden">
+                        <a href="https://github.com/gauri0304/AI-enhanced-WhiteBoard" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <h4>AI-enhanced Whiteboard</h4>
+                        <p><strong>Tools:</strong> Python,Tkinter, NLTK, MySQL</p>
+                        <p>Advanced whiteboard app built with Tkinter & SQL for data storage.</p>
+                        <p>AI features: idea generation, text extraction, flowchart creation, voice assistant, and
+                            summarization.</p>
+                        <p>Crafted for productivity and creativity in education and professional spaces.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image toggle-content" style="background-image: url('Data/RRS.png');">
+                    </div>
+                    <div class="project-content hidden">
+                        <a href="https://github.com/gauri0304/recipe-recommendation-system" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <h4>Recipe Recommendation System</h4>
+                        <p><strong>Tools:</strong> Python, Flask, MySQL, Pandas</p>
+                        <p>Developed a personalized recipe suggestion system using Python, Flask, MySQL, and Pandas.</p>
+                        <p>Recommends recipes based on user preferences, dietary restrictions, and available
+                            ingredients.</p>
+                        <p>Enhances meal planning by offering quick, healthy, and diverse recipe suggestions tailored to
+                            individual needs.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image toggle-content" style="background-image: url('Data/restaurant1.jpg');">
+                    </div>
+                    <div class="project-content hidden">
+                        <a href="https://github.com/gauri0304/spine--dine-restaurant" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <h4>Spine & Dine Restaurant</h4>
+                        <p><strong>Tools:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+                        <p>Features visually appealing menu layouts that highlight daily specials and customer
+                            favorites.</p>
+                        <p>Interactive gallery and event sections showcase the restaurant's ambiance and offerings.</p>
+                        <p>Designed to provide visitors with a smooth, informative, and appetizing browsing experience.
+                        </p>
                     </div>
                 </div>
             </div>
