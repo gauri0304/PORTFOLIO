@@ -254,6 +254,7 @@ header * {
 
 .header__links a:hover {
   color: #0c2d48;
+  border: 2px solid #fff;
   box-shadow: 0 0 20px #75e6da;
 }
 
@@ -278,7 +279,7 @@ header * {
 }
 
 .header__links a.three::after {
-  background-color: rgb(235, 41, 41);
+  background-color: rgb(236, 58, 58);
 }
 
 .header__content {
