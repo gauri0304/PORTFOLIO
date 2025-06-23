@@ -15,3 +15,8 @@ summary of your skills. Provide an
 "About Me" section with a detailed
 background, education, and
 professional experience.
+
+Features: 
+🧩 Built with HTML, CSS, Bootstrap, and jQuery to ensure smooth animations, hover effects, and mobile-friendly layout.
+🌟 Highlights your skills, education, certifications, and major projects with GitHub links and tech stacks.
+📱 Features smooth scrolling, responsive layout, and clear section links, ensuring a seamless experience across all devices.

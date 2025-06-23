@@ -1,11 +1,10 @@
 $(function () {
-
-    // Menu toggle
+    // ===== Menu Toggle for Mobile =====
     $(".menu-bars").on("click", function () {
-        $(".menu-responsive").toggle(); // Simple toggle
+        $(".menu-responsive").toggle(); // Show/hide sidebar
     });
 
-    // Smooth scroll
+    // ===== Smooth Scroll Navigation =====
     $(".scroll").on("click", function (e) {
         e.preventDefault();
         const target = this.hash;
@@ -18,15 +17,7 @@ $(function () {
         }
     });
 
-    // ScrollReveal Progress Bars
-    window.sr = ScrollReveal();
-    sr.reveal(".progress-bar", {
-        origin: "left",
-        duration: 2000,
-        distance: "100%"
-    });
-
-    // Text Animation
+    // ===== Typing Text Animation =====
     const sentences = ["web designer ?", "web developer ?"];
     let i = 0;
     setInterval(function () {
@@ -35,36 +26,14 @@ $(function () {
         });
     }, 2500);
 
-    // Project cards (card-medium toggle)
-    $(".card-medium").each(function () {
-        const $card = $(this);
-        const $infoIcon = $card.find(".fa-circle-info");
-        const $githubIcon = $card.find(".fa-github");
-        const $content = $card.find(".card-content");
-        const $githubLink = $card.find(".card-git-content a");
-
-        $content.removeClass("expanded");
-
-        $infoIcon.on("click", function () {
-            $content.toggleClass("expanded");
-        });
-
-        $githubIcon.on("click", function () {
-            const url = $githubLink.attr("href");
-            if (url) {
-                window.open(url, "_blank");
-            }
-        });
-    });
-
-    // New: Project-card image click toggle
+    // ===== Project Card Toggle (Click to Show Content) =====
     $(".project-image").on("click", function () {
         const $content = $(this).siblings(".project-content");
         $content.toggleClass("show");
     });
 });
 
-// Back to Top Button
+// ===== Back to Top Button =====
 let mybutton = document.getElementById("myBtn");
 
 window.onscroll = function () {
@@ -74,8 +43,10 @@ window.onscroll = function () {
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
+        mybutton.classList.add("show");
     } else {
         mybutton.style.display = "none";
+        mybutton.classList.remove("show");
     }
 }
 
