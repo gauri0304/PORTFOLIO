@@ -995,6 +995,7 @@ body {
 .project-content a:hover {
   color: #000c66;
   background-color: #fff;
+  border: 1px solid #000c66;
 }
 
 /* Responsive */
