@@ -17,6 +17,6 @@ background, education, and
 professional experience.
 
 Features: 
-🧩 Built with HTML, CSS, Bootstrap, and jQuery to ensure smooth animations, hover effects, and mobile-friendly layout.
-🌟 Highlights your skills, education, certifications, and major projects with GitHub links and tech stacks.
+🧩 Built with HTML, CSS, Bootstrap, and jQuery to ensure smooth animations, hover effects, and mobile-friendly layout. <br>
+🌟 Highlights your skills, education, certifications, and major projects with GitHub links and tech stacks. <br>
 📱 Features smooth scrolling, responsive layout, and clear section links, ensuring a seamless experience across all devices.
