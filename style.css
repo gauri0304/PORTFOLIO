@@ -821,17 +821,31 @@ header * {
 }
 
 /* == Skills Section Styling == */
+/* Key Animations */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #skills {
     background-color: #0c2d48;
     color: #fff;
     padding: 60px 0;
     text-align: center;
+    animation: fadeSlideIn 1s ease forwards;
 }
 
 #skills .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    animation: fadeSlideIn 1.2s ease forwards;
 }
 
 #skills h1 {
@@ -840,6 +854,9 @@ header * {
     margin-bottom: 40px;
     color: #75e6da;
     text-decoration: underline;
+    opacity: 0;
+    animation: fadeSlideIn 1.3s ease forwards;
+    animation-delay: 0.2s;
 }
 
 #skills h2 {
@@ -847,6 +864,9 @@ header * {
     color: #75e6da;
     margin: 30px 0 15px;
     text-align: center;
+    opacity: 0;
+    animation: fadeSlideIn 1.4s ease forwards;
+    animation-delay: 0.4s;
 }
 
 #skills .row {
@@ -877,12 +897,15 @@ header * {
     padding: 10px 20px;
     border-radius: 8px;
     font-size: 1.1rem;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, transform 0.3s ease;
     white-space: nowrap;
+    opacity: 0;
+    animation: fadeSlideIn 0.5s ease forwards;
 }
 
 #skills ul li:hover {
     background: #c1c3c6;
+    transform: scale(1.05);
 }
 
 #skills .skill-icon {
@@ -892,6 +915,7 @@ header * {
     border-radius: 4px;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     #skills .row {
         flex-direction: column;
