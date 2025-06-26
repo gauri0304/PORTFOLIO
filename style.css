@@ -380,12 +380,27 @@ header * {
 
 /* == About Section == */
 #about {
-    background: #f8f9fa;
+    position: relative;
     padding: 60px 20px;
     text-align: center;
     width: 95%;
     max-width: 1400px;
     margin: 0 auto;
+    z-index: 1;
+    color: #fff; /* Optional: to improve text visibility */
+    overflow: hidden;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/Data/about_bg.jpg') center/cover no-repeat;
+    opacity: 0.4; /* Adjust as needed */
+    z-index: -1;
 }
 
 #about h2 {
@@ -409,7 +424,7 @@ header * {
 
 #about p {
     font-size: 1.1rem;
-    color: #555;
+    color: #000;
     line-height: 1.6;
     max-width: 800px;
     margin: 10px auto;
@@ -445,6 +460,7 @@ header * {
 }
 
 #about ul li {
+    color: #000;
     font-size: 1.1rem;
     margin-bottom: 10px;
 }
@@ -585,10 +601,25 @@ header * {
 
 /* == Education Section Styling == */
 #education {
-    background-color: #f8f9fa;
+    position: relative;
     padding: 40px 0;
     text-align: center;
     animation: fadeUp 1s ease-out both;
+    z-index: 1;
+    overflow: hidden;
+    color: #fff; /* Optional: if background is dark */
+}
+
+#education::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('Data/education_bg.jpg') center/cover no-repeat;
+    opacity: 0.4; /* Adjust opacity as needed */
+    z-index: -1;
 }
 
 #education .education-container {
@@ -1041,160 +1072,140 @@ header * {
 
 /* == Contact Section Styles == */
 #contact {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
     background-color: #0c2d48;
-    padding: 40px 0;
     color: #fff;
+    overflow: hidden;
     animation: fadeUp 1s ease-out both;
 }
 
-#contact h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #75e6da;
-    text-align: center;
-    text-decoration: underline;
-    animation: fadeInDown 1s ease-out both;
-    animation-delay: 0.2s;
-}
-
-#contact .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-#contact .row {
+.contact-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    animation: fadeUp 1s ease-out both;
-    animation-delay: 0.4s;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #0c2d48; /* subtle inner card style */
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
 }
 
-#contact .col-lg-6 {
-    flex: 1;
-    min-width: 300px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.contact-container:hover {
+    transform: scale(1.02);
 }
 
-#contact .col-lg-6:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(117, 230, 218, 0.2);
+.col-md-6, .col-md-6-text-center {
+    flex: 1 1 400px;
+    padding: 20px;
+    animation: slideIn 1.2s ease-out both;
 }
 
-#contact ul {
+.col-md-6-text-center ul {
     list-style: none;
     padding: 0;
 }
 
-#contact ul li {
-    display: flex;
-    align-items: center;
+.col-md-6-text-center ul li {
+    color: white;
+    margin-bottom: 20px;
     font-size: 18px;
-    margin-bottom: 10px;
-    color: #fff;
-    opacity: 0;
-    animation: fadeUp 1s ease-out forwards;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-#contact ul li:nth-child(1) {
-    animation-delay: 0.5s;
+.col-md-6-text-center ul li:hover {
+    transform: translateY(-5px);
 }
 
-#contact ul li:nth-child(2) {
-    animation-delay: 0.7s;
-}
-
-#contact ul li:nth-child(3) {
-    animation-delay: 0.9s;
-}
-
-#contact ul li i {
+.col-md-6-text-center i {
+    font-size: 24px;
     margin-right: 10px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 20px;
-    background-color: #1b4965;
-    transition: transform 0.3s ease;
 }
-
-#contact ul li i:hover {
-    transform: scale(1.1);
-}
-
-#contact ul li p {
-    margin: 0;
-    color: #75e6da;
-    font-size: medium;
-    transition: color 0.3s ease;
-}
-
-#contact a {
-    text-decoration: none;
+.col-md-6-text-center a {
     color: #fff;
-    transition: color 0.3s ease;
 }
 
-#contact a:hover {
-    color: #75e6da;
-    text-decoration: underline;
+.col-md-6-text-center a:hover {
+    color: #4ed0d5;
+    font-size: 20px;
 }
 
-@media (min-width: 47.9em) {
-    #contact .lead {
-        font-size: 2rem;
-    }
-
-    #contact p {
-        font-size: 1.8rem;
-    }
+form {
+    text-align: left;
 }
 
-@media (min-width: 61.9em) {
-    #contact .lead {
-        font-size: 2.2rem;
-    }
-
-    #contact p {
-        font-size: 2rem;
-    }
+.form-label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    display: block;
 }
 
-@media (min-width: 74.9em) {
-    #contact .lead {
-        font-size: 2.4rem;
-    }
-
-    #contact p {
-        font-size: 2.2rem;
-    }
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
 }
 
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 10px #4ed0d5;
+}
+
+.submit-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    background-color: #0072b1;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #000c66;
+    transform: translateY(-3px);
+}
+
+/* Animations */
 @keyframes fadeUp {
     0% {
-        transform: translateY(20px);
         opacity: 0;
+        transform: translateY(30px);
     }
-
     100% {
-        transform: translateY(0);
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@keyframes fadeInDown {
-    0% {
-        transform: translateY(-20px);
+@keyframes slideIn {
+    from {
         opacity: 0;
+        transform: translateX(-30px);
     }
-
-    100% {
-        transform: translateY(0);
+    to {
         opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
     }
 }
 
