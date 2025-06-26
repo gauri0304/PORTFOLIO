@@ -1,7 +1,7 @@
 $(function () {
     // ===== Menu Toggle for Mobile =====
     $(".menu-bars").on("click", function () {
-        $(".menu-responsive").toggle(); // Show/hide sidebar
+        $(".menu-responsive").toggle(); 
     });
 
     // ===== Smooth Scroll Navigation =====
@@ -51,6 +51,6 @@ function scrollFunction() {
 }
 
 function topFunction() {
-    document.body.scrollTop = 0; // Safari
-    document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, Opera
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
 }

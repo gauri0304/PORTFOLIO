@@ -387,7 +387,7 @@ header * {
     max-width: 1400px;
     margin: 0 auto;
     z-index: 1;
-    color: #fff; /* Optional: to improve text visibility */
+    color: #fff; 
     overflow: hidden;
 }
 
@@ -399,7 +399,7 @@ header * {
     right: 0;
     bottom: 0;
     background: url('/Data/about_bg.jpg') center/cover no-repeat;
-    opacity: 0.4; /* Adjust as needed */
+    opacity: 0.4; 
     z-index: -1;
 }
 
@@ -607,7 +607,7 @@ header * {
     animation: fadeUp 1s ease-out both;
     z-index: 1;
     overflow: hidden;
-    color: #fff; /* Optional: if background is dark */
+    color: #fff;
 }
 
 #education::before {
@@ -618,7 +618,7 @@ header * {
     right: 0;
     bottom: 0;
     background: url('Data/education_bg.jpg') center/cover no-repeat;
-    opacity: 0.4; /* Adjust opacity as needed */
+    opacity: 0.4; 
     z-index: -1;
 }
 
@@ -821,7 +821,6 @@ header * {
 }
 
 /* == Skills Section Styling == */
-/* Key Animations */
 @keyframes fadeSlideIn {
   0% {
     opacity: 0;
@@ -915,7 +914,6 @@ header * {
     border-radius: 4px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     #skills .row {
         flex-direction: column;
@@ -971,7 +969,6 @@ header * {
     box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
 }
 
-/* Image Container */
 .project-image {
     height: 100%;
     background-size: cover;
@@ -1112,7 +1109,7 @@ header * {
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #0c2d48; /* subtle inner card style */
+    background-color: #0c2d48; 
     padding: 20px;
     border-radius: 20px;
     transition: transform 0.3s ease;
@@ -1203,7 +1200,6 @@ form {
     transform: translateY(-3px);
 }
 
-/* Animations */
 @keyframes fadeUp {
     0% {
         opacity: 0;
@@ -1226,7 +1222,6 @@ form {
     }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
