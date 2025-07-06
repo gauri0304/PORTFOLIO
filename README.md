@@ -50,5 +50,5 @@ PRODIGY_WD_04/ <br>
 
 2. Navigate to the folder:
 
-cd PRODIGY_WD_04
+   cd PRODIGY_WD_04
 
