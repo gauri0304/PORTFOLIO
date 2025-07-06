@@ -1,23 +1,54 @@
-04
-Task-04
+# 🧑‍💻 Personal Portfolio Website – PRODIGY_WD_04
 
-Personal portfolio website <br>
-Live Demo: https://gauri0304.github.io/PRODIGY_WD_04/ <br>
+A **responsive and professional portfolio website** built as **Task 4** for the **Web Development Internship at Prodigy InfoTech**.
 
-Build a personal portfolio website
-that showcases your skills, projects,
-and accomplishments as a web
-developer. Design an attractive and
-visually appealing layout that
-captures visitors' attention. Include a
-home page with a captivating
-headline, professional photo, and
-summary of your skills. Provide an
-"About Me" section with a detailed
-background, education, and
-professional experience.
+This site showcases **skills**, **projects**, **education**, **certifications**, and **contact information** – designed to highlight personal achievements and technical capabilities.
 
-Features: <br>
-🧩 Built with HTML, CSS, Bootstrap, and jQuery to ensure smooth animations, hover effects, and mobile-friendly layout. <br>
-🌟 Highlights your skills, education, certifications, and major projects with GitHub links and tech stacks. <br>
-📱 Features smooth scrolling, responsive layout, and clear section links, ensuring a seamless experience across all devices.
+🔗 [Live Demo](https://gauri0304.github.io/PRODIGY_WD_04/)
+
+---
+
+## ✨ Features
+
+- 👩‍💼 **About Me** section with a brief introduction
+- 🧰 **Skills** presented with visual indicators
+- 📚 **Education** & **Certifications** timeline
+- 💼 **Project Showcase** with GitHub links and descriptions
+- 📱 **Responsive Layout** – works seamlessly across all devices
+- 📫 **Contact Form** with functional structure (can be connected to backend/email service)
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5** – Page structure
+- **CSS3** – Styling and responsiveness
+- **JavaScript** – Interactivity and animations
+- **Bootstrap / Font Awesome** – (If used) for layout & icons
+
+---
+
+## 🗂️ Folder Structure
+
+PRODIGY_WD_04/ <br>
+│ <br>
+├── index.html <br>
+├── style.css <br>
+├── script.js <br>
+├── /images <br>
+└── README.md 
+
+---
+
+---
+
+## 🚀 How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/gauri0304/PRODIGY_WD_04.git
+
+2. Navigate to the folder:
+
+cd PRODIGY_WD_04
+
