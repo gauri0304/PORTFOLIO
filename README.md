@@ -10,12 +10,14 @@ This site showcases **skills**, **projects**, **education**, **certifications**,
 
 ## ✨ Features
 
-- 👩‍💼 **About Me** section with a brief introduction
-- 🧰 **Skills** presented with visual indicators
-- 📚 **Education** & **Certifications** timeline
-- 💼 **Project Showcase** with GitHub links and descriptions
-- 📱 **Responsive Layout** – works seamlessly across all devices
-- 📫 **Contact Form** with functional structure (can be connected to backend/email service)
+Features:
+- 🧩 Responsive design using mediaqueries.css for mobile compatibility.
+- 👨‍💻 Sections: About, Experience, Projects, and Contact.
+- 📄 Resume download button and contact info with email & LinkedIn.
+- 💼 Experience section shows tech skills with icons and levels.
+- 🔗 Projects section with GitHub and live demo links.
+- 📱 Hamburger menu for smooth mobile navigation.
+- 🌐 Linked social icons to GitHub and LinkedIn profiles.
 
 ---
 
@@ -35,10 +37,9 @@ PRODIGY_WD_04/ <br>
 ├── index.html <br>
 ├── style.css <br>
 ├── script.js <br>
-├── /images <br>
+├── /assets <br>
+├── mediaqueries.css <br>
 └── README.md 
-
----
 
 ---
 
@@ -46,7 +47,7 @@ PRODIGY_WD_04/ <br>
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/gauri0304/PRODIGY_WD_04.git
+   git clone https://github.com/sxoham/PRODIGY_WD_04.git
 
 2. Navigate to the folder:
 
