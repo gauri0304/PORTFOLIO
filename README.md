@@ -1,10 +1,10 @@
-# 🧑‍💻 Personal Portfolio Website – PRODIGY_WD_04
+# 🧑‍💻 Personal Portfolio Website 
 
 A **responsive and professional portfolio website** built as **Task 4** for the **Web Development Internship at Prodigy InfoTech**.
 
 This site showcases **skills**, **projects**, **education**, **certifications**, and **contact information** – designed to highlight personal achievements and technical capabilities.
 
-🔗 [Live Demo](https://gauri0304.github.io/PRODIGY_WD_04/)
+🔗 [Live Demo](https://gauri0304.github.io/PORTFOLIO/)
 
 ---
 
@@ -31,7 +31,7 @@ Features:
 
 ## 🗂️ Folder Structure
 
-PRODIGY_WD_04/ <br>
+PORTFOLIO/ <br>
 │ <br>
 ├── index.html <br>
 ├── style.css <br>
@@ -45,9 +45,9 @@ PRODIGY_WD_04/ <br>
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/gauri0304/PRODIGY_WD_04.git
+   git clone https://github.com/gauri0304/PORTFOLIO.git
 
 2. Navigate to the folder:
 
-   cd PRODIGY_WD_04
+   cd PORTFOLIO
 
